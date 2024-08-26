@@ -2,7 +2,7 @@
 templateKey: sushasan-page
 title: Sushasan
 bannerImage: /img/sushasan_banner.png
-logo: /img/sushasan_logo.png
+logo: /img/sushasan.png
 text: >-
   Sushasan is India’s first podcast exclusively focused on governance, where we
   bring you unfiltered conversations with the people behind India’s governance.
@@ -11,51 +11,123 @@ text: >-
   podcast offers listeners a ringside view of the functioning of the Indian
   state as well as a glimpse into the personal journeys of these leaders. <br>
   <br>
-
   Subscribe now and watch all the latest episodes on Sushasan's YouTube channel for governance behind-the-scenes! <br> <br>
-
-  #GovernanceBTS
-mail: sushasan@samagragovernance.in
-title1: Sushasan Season 1
-title2: " "
-podcastsS1:
-  - title: EP 01 – Anil Swarup
-    url: https://www.youtube.com/embed/vLrZOL0X81k
-  - title: EP 02 – Anita Karwal
-    url: https://www.youtube.com/embed/zidabJy7ous
-  - title: EP 03 – Awanish Awasthi
-    url: https://www.youtube.com/embed/yuV5afr7E9E
-  - title: EP 04 – Dr. R.S. Sharma
-    url: https://www.youtube.com/embed/PwFZMd6SG_E
-  - title: EP 05 – Ashish Dhawan
-    url: https://www.youtube.com/embed/xTiOH-ixAYs?si=NWYKLC3iCuWW2BQT
-  - title: EP 06 – Jasmine Shah
-    url: https://www.youtube.com/embed/iZlZWSMVTXU?si=A1gVJ6a7KAnzwByo
-  - title: EP 07 – Rajesh Bhushan
-    url: https://www.youtube.com/embed/eLvVvaat5Aw?si=peOpV2Jkvbafc1lk
-  - title: EP 08 – Alok Kumar
-    url: https://www.youtube.com/embed/8QzklM9DPPg?si=P0aneaWuRtvU5nIT
-  - title: EP 09 – Dr. Rakesh Gupta
-    url: https://www.youtube.com/embed/2uZtnYNCRxg?si=fb8XBafE6yeQeY8-
-  - title: EP 10 – Dr. S.Y. Quraishi
-    url: https://www.youtube.com/embed/oO1S9puUE1M?si=ZEW5wHc2Ub8vbkIN
-  - title: S1 – Recap
-    url: https://www.youtube.com/embed/VwFe_bkW-cw?si=UYk6uGJDd33YIJOL
-title3: Sushasan Season 2
-title4: " "
-podcastsS2:
-  - title: S2 – Trailer
-    url: https://www.youtube.com/embed/EunWHI9_aco
-  - title: EP 01 – P. Narahari
-    url: https://www.youtube.com/embed/V1yNZUThGoU
-  - title: EP 02 – Amit Mohan Prasad
-    url: https://www.youtube.com/embed/a9niDBhFwcU?si=0F2E92SQsXJmZ7IC
-  - title: EP 03 – Dr. Indu Bhushan
-    url: https://www.youtube.com/embed/FnMSjEFiSw0?si=pj-4N2N0Mc9yhu8x
-  - url: https://www.youtube.com/embed/IkYZviYmsQs?si=gh10b2JOhdZeEWpZ
-    title: EP 04 – Dr. Pramod Varma
-  - url: https://www.youtube.com/embed/lO45u_E9uVI?si=x9WIkk9cX-CGA5lS
-    title: EP 05 – Manjari Jaruhar
-  - url: https://www.youtube.com/embed/d7ESYjV3E-0?si=SaG0zAh5HRtHtQrq
-    title: S2 – Recap
+  <b>#GovernanceBTS</b>
+postCategories:
+  - season: "1"
+  - season: "2"
+  - season: "3"
+  - season: "4"
+  - season: "5"
+postData:
+  - postCard:
+      postName: Anil Swarup
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/vLrZOL0X81k
+      episode: "1"
+      postImage: /img/file.png
+  - postCard:
+      postName: Anita Karwal
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/zidabJy7ous
+      episode: "2"
+      postImage: /img/file.png
+  - postCard:
+      postName: Awanish Awasthi
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/yuV5afr7E9E
+      episode: "3"
+      postImage: /img/file.png
+  - postCard:
+      postName: Dr. R.S. Sharma
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/PwFZMd6SG_E
+      episode: "4"
+      postImage: /img/file.png
+  - postCard:
+      postName: Ashish Dhawan
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/xTiOH-ixAYs?si=NWYKLC3iCuWW2BQT
+      episode: "5"
+      postImage: /img/file.png
+  - postCard:
+      postName: Jasmine Shah
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/iZlZWSMVTXU?si=A1gVJ6a7KAnzwByo
+      episode: "6"
+      postImage: /img/file.png
+  - postCard:
+      postName: Rajesh Bhushan
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/eLvVvaat5Aw?si=peOpV2Jkvbafc1lk
+      episode: "7"
+      postImage: /img/file.png
+  - postCard:
+      postName: Alok Kumar
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/8QzklM9DPPg?si=P0aneaWuRtvU5nIT
+      episode: "8"
+      postImage: /img/file.png
+  - postCard:
+      postName: Dr. Rakesh Gupta
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/2uZtnYNCRxg?si=fb8XBafE6yeQeY8-
+      episode: "9"
+      postImage: /img/file.png
+  - postCard:
+      postName: Dr. S.Y. Quraishi
+      selectedCategory: "1"
+      urlLink: https://www.youtube.com/embed/oO1S9puUE1M?si=ZEW5wHc2Ub8vbkIN
+      episode: "10"
+      postImage: /img/file.png
+  - postCard:
+      postName: P. Narahari
+      selectedCategory: "2"
+      urlLink: https://www.youtube.com/embed/V1yNZUThGoU
+      episode: "1"
+      postImage: /img/file.png
+  - postCard:
+      postName: Amit Mohan Prasad
+      selectedCategory: "2"
+      urlLink: https://www.youtube.com/embed/a9niDBhFwcU?si=0F2E92SQsXJmZ7IC
+      episode: "2"
+      postImage: /img/file.png
+  - postCard:
+      postName: Dr. Indu Bhushan
+      selectedCategory: "2"
+      urlLink: https://www.youtube.com/embed/FnMSjEFiSw0?si=pj-4N2N0Mc9yhu8x
+      episode: "3"
+      postImage: /img/file.png
+  - postCard:
+      postName: Dr. Pramod Varma
+      selectedCategory: "2"
+      urlLink: https://www.youtube.com/embed/IkYZviYmsQs?si=gh10b2JOhdZeEWpZ
+      episode: "4"
+      postImage: /img/file.png
+  - postCard:
+      postName: Manjari Jaruhar
+      selectedCategory: "2"
+      urlLink: https://www.youtube.com/embed/lO45u_E9uVI?si=x9WIkk9cX-CGA5lS
+      episode: "5"
+      postImage: /img/file.png
+youtubeLink: https://www.youtube.com/@SushasanThePodcast
+assetsHeading: Explore Our Assets
+assets:
+  - assetCard:
+      assetImage: /img/amrit-series-3-.png
+      name: Amrit Series
+      description:
+        A collection of success stories of large scale impact through our
+        work across domains and states.
+      link: /amritseries
+  - assetCard:
+      assetImage: /img/amrit-series-1-.png
+      name: Sushasan
+      description: India’s first podcast exclusively focused on governance.
+      link: /sushasan
+  - assetCard:
+      assetImage: /img/amrit-series-2-.png
+      name: Governance Frameworks
+      description: The Governance Matrix and Panchsutras for Governance Transformation.
+      link: /governanceframeworks
 ---

@@ -25,6 +25,7 @@
 @import "./HomePageUpdated";
 @import "./OurAssets.scss";
 @import "./DeclutteredPage.scss";
+@import "./Sushasan.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .media-page-banner {
@@ -670,12 +671,6 @@ p {
 
 .sushasan-channel-trailer-text {
   flex: 1;
-}
-
-.sushasan-logo {
-  margin: 15px;
-  width: 250px;
-  height: 150px;
 }
 
 // For mobile view

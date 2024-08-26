@@ -23,6 +23,10 @@ postCategories:
   - category: Judiciary
 postData:
   - postCard:
+      urlLink: https://www.instagram.com/reel/C_GK98RSE5q/?igsh=MXQxbDc3ZGE2cjdoZA==
+      selectedCategory: Judiciary
+      postImage: /img/cropped-image.png
+  - postCard:
       selectedCategory: Judiciary
       urlLink: https://www.youtube.com/embed/xp1hFoisA94?si=jGbVnRzici7rerW6
       postImage: /img/copy-of-ig-reel-1-.jpg

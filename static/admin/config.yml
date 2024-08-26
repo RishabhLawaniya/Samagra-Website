@@ -2183,29 +2183,61 @@ collections:
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Text", name: "text", widget: "string" }
-          - { label: "Mail", name: "mail", widget: "string" }
-          - { label: "Title 1", name: "title1", widget: "string" }
-          - { label: "Title 2", name: "title2", widget: "string" }
+          - { label: "Youtube Link", name: "youtubeLink", widget: "string" }
+          - { label: "Assets Heading", name: "assetsHeading", widget: "string" }
           - {
-              label: "Podcasts S1",
-              name: "podcastsS1",
-              widget: "list",
+              label: Assets,
+              name: assets,
+              widget: list,
               fields:
                 [
-                  { label: "Link", name: "url", widget: "string" },
-                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: Asset Card,
+                    name: assetCard,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Asset Image, name: assetImage, widget: image },
+                        { label: Name, name: name, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
+                        { label: Link, name: link, widget: string },
+                      ],
+                  },
                 ],
             }
-          - { label: "Title 3", name: "title3", widget: "string" }
-          - { label: "Title 4", name: "title4", widget: "string" }
           - {
-              label: "Podcasts S2",
-              name: "podcastsS2",
-              widget: "list",
+              label: "Post Categories",
+              name: "postCategories",
+              widget: list,
+              fields: [{ label: Season, name: season, widget: "string" }],
+            }
+          - {
+              label: Post Data,
+              name: postData,
+              widget: list,
               fields:
                 [
-                  { label: "Link", name: "url", widget: "string" },
-                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: Post Card,
+                    name: postCard,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Post Name, name: postName, widget: string },
+                        {
+                          label: "Category",
+                          name: "selectedCategory",
+                          widget: "string",
+                        },
+                        { label: UrlLink, name: urlLink, widget: string },
+                        { label: Episode No., name: episode, widget: "string" },
+                        { label: Post Image, name: postImage, widget: "image" },
+                      ],
+                  },
                 ],
             }
       - file: "src/pages/joinus/index.md"

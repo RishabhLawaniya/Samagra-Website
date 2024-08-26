@@ -1,14 +1,52 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import CareerBannerImage from '../components/CareerPageComponents/CareerBannerImage/CareerBanner';
-import SushasanPageComponent from '../components/SushasanPageComponent/SushasanPageComponent';
+import React, { useEffect, useState } from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import CareerBannerImage from "../components/CareerPageComponents/CareerBannerImage/CareerBanner";
+import SushasanPageComponent from "../components/SushasanPageComponent/SushasanPageComponent";
+import upIcon from "../img/up-icon.png";
+import { animateScroll as scroll } from "react-scroll";
 
 export const SushasanTemplate = ({ content }) => {
+  const [mobile, setMobile] = useState(false);
+  const [showUpIcon, setShowUpIcon] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setMobile(() => true);
+      } else {
+        setMobile(() => false);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  const handleScroll = () => {
+    if (window && window.scrollY > window.screen.height) {
+      setShowUpIcon(true);
+    } else setShowUpIcon(false);
+  };
   return (
     <React.Fragment>
       <CareerBannerImage bannerContent={content} />
-      <SushasanPageComponent content={content} />
+      <SushasanPageComponent content={content} mobile={mobile} />
+      {!mobile && showUpIcon && (
+        <div className={"up-icon"}>
+          <img src={upIcon} onClick={scrollToTop} />
+        </div>
+      )}
     </React.Fragment>
   );
 };
@@ -44,18 +82,39 @@ export const mediaPageQuery = graphql`
           }
         }
         text
-        mail
-        title1
-        title2
-        podcastsS1 {
-          url
-          title
+        youtubeLink
+        assetsHeading
+        assets {
+          assetCard {
+            assetImage {
+              childImageSharp {
+                fluid(maxWidth: 1024, quality: 60) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            name
+            description
+            link
+          }
         }
-        title3
-        title4
-        podcastsS2 {
-          url
-          title
+        postCategories {
+          season
+        }
+        postData {
+          postCard {
+            postName
+            selectedCategory
+            urlLink
+            episode
+            postImage {
+              childImageSharp {
+                fluid(maxWidth: 1024, quality: 60) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }

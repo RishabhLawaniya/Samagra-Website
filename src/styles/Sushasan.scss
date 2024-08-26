@@ -1,0 +1,282 @@
+#sushasan-page {
+  .sushasan-logo {
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+  }
+  .sushasan-header {
+    display: flex;
+    margin: 0 8rem 4rem 8rem;
+    gap: 3rem;
+  }
+  .sushasan-header-text {
+    flex: 1.6;
+    font-size: 18px;
+  }
+  .tab-container {
+    margin: 0rem 8rem;
+  }
+  .tab-sub-container {
+    border-bottom: 1px solid #e2e2e2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .tab-item {
+    padding: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .categories-data {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 8rem;
+    gap: 1.5rem;
+  }
+  .category-card {
+    border-radius: 18px;
+    background-color: #eef7ff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card-video {
+    border-radius: 8px;
+    width: 100%;
+    height: 30vh;
+  }
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 8px;
+  }
+  .sushasan-chip {
+    background-color: #1646a1;
+    padding: 4px 8px;
+    gap: 4px;
+    border-radius: 4px;
+    color: #eef7ff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .card-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .youtube-button-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding: 56px 0;
+  }
+  .button-section-description {
+    font-size: 22px;
+    line-height: 160%;
+    text-align: center;
+    font-weight: 400;
+    color: #121213;
+  }
+  .button-style {
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(237, 29, 36, 1);
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    gap: 12px;
+    border-radius: 8px;
+    border: none;
+  }
+  .insta-icon {
+    width: 68px;
+    height: 44px;
+  }
+  .button-text {
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .logo {
+    width: 234px;
+  }
+  .youtube-icon {
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 34px);
+    width: 68px;
+    height: 44px;
+  }
+  .youtube-icon-button {
+    width: 68px;
+    height: 44px;
+  }
+  .border-8 {
+    border-radius: 8px;
+  }
+  .partner-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .postcard {
+    width: 100%;
+    aspect-ratio: 1.4;
+    border-radius: 8px;
+  }
+  .video-view {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+  }
+  .external-link {
+    width: 24px;
+    height: 24px;
+  }
+  .external-link-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 40px;
+    background: #585858;
+    padding: 15px 21px;
+    margin: 24px 0;
+    cursor: pointer;
+  }
+  .view-post {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  .partner-box {
+    border-radius: 8px !important;
+  }
+  @media screen and (max-width: 769px) {
+    .video-view {
+      height: 100vh;
+      padding: 1.2rem;
+    }
+    .external-link-button {
+      gap: 0.5rem;
+      font-size: 10px;
+      border-radius: 21px;
+      padding: 8px 12px;
+      margin: 16px 0;
+      cursor: pointer;
+    }
+    .external-link {
+      width: 1rem;
+      height: 1rem;
+    }
+    .logo {
+      width: 120px;
+    }
+    .sushasan-logo {
+      margin: 3rem 0;
+    }
+    .sushasan-header {
+      flex-direction: column;
+      margin: 1.5rem;
+      gap: 1.5rem;
+    }
+    .sushasan-header-text {
+      flex: 1;
+      font-size: 18px;
+    }
+    .tab-container {
+      margin: 0px 24px;
+      border-radius: 15.34px;
+    }
+    .tab-sub-container {
+      //   border-bottom: 0.35px solid #e2e2e2;
+      border-bottom: none;
+    }
+    .tab-item {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+    .categories-data {
+      grid-template-columns: 1fr;
+      padding: 1rem 1.5rem;
+      gap: 2em;
+    }
+    .category-card {
+      border-radius: 15px;
+      background-color: #eef7ff;
+      box-shadow: 0px 0px 6.8px 0px rgba(0, 0, 0, 0.4);
+    }
+    .postcard {
+      border-radius: 6.32px;
+    }
+    .card-video {
+      height: 30vh;
+    }
+    .card-content {
+      gap: 1rem;
+      padding-bottom: 8px;
+    }
+    .sushasan-chip {
+      padding: 2px 4px;
+      gap: 4px;
+      border-radius: 2px;
+      font-size: 15px;
+    }
+    .card-name {
+      font-size: 15px;
+    }
+    .button-section-description {
+      font-size: 14px;
+    }
+    .youtube-button-section {
+      gap: 12px;
+      padding: 0px;
+    }
+    .button-style {
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+      padding: 8px 12px;
+      gap: 7px;
+      border-radius: 5.4px;
+    }
+    .youtube-icon-button {
+      width: 34.68px;
+      height: 22.44px;
+    }
+    .button-text {
+      font-size: 15.31px;
+    }
+    .partner-box {
+      border-radius: 6.77px !important;
+      // margin: 0px 1px 3rem 1px !important;
+      padding: 91px 45.5px !important;
+    }
+    .partner-text {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
